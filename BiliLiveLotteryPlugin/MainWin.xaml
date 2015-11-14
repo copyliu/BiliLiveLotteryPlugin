@@ -22,11 +22,11 @@
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
-                    <TextBlock x:Name="tb1" TextWrapping="Wrap" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
-                    <TextBlock x:Name="tb2" TextWrapping="Wrap" Grid.Row="1" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
-                    <TextBlock x:Name="tb3" TextWrapping="Wrap" Grid.Row="2" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
-                    <TextBlock x:Name="tb4" TextWrapping="Wrap" Grid.Row="3" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
-                    <TextBlock x:Name="tb5" TextWrapping="Wrap" Grid.Row="4" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
+                    <TextBlock x:Name="tb1" TextWrapping="Wrap" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Hand"/>
+                    <TextBlock x:Name="tb2" TextWrapping="Wrap" Grid.Row="1" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Hand"/>
+                    <TextBlock x:Name="tb3" TextWrapping="Wrap" Grid.Row="2" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Hand"/>
+                    <TextBlock x:Name="tb4" TextWrapping="Wrap" Grid.Row="3" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Hand"/>
+                    <TextBlock x:Name="tb5" TextWrapping="Wrap" Grid.Row="4" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Hand"/>
                 </Grid>
             </DockPanel>
         </TabItem>

@@ -62,7 +62,7 @@ namespace BiliLiveLotteryPlugin
                 var obj = (TextBlock) sender;
                 try
                 {
-                    Clipboard.SetData(DataFormats.Text, obj.Text);
+                    Clipboard.SetData(DataFormats.UnicodeText, obj.Text);
                     MessageBox.Show(Application.Current.MainWindow, "名字已复制到剪贴板");
                 }
                 catch (Exception)

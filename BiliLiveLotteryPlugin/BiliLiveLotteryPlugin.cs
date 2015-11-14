@@ -14,7 +14,7 @@ namespace BiliLiveLotteryPlugin
             PluginAuth = "CopyLiu";
             PluginCont = "copyliu@gmail.com";
             PluginName = "直播抽奖辅助";
-            PluginVer = "0.0.0.1";
+            PluginVer = "0.0.0.3";
             mainWin=new MainWin();
             mainWin.plugin = this;
             ReceivedDanmaku += BiliLiveLotteryPlugin_ReceivedDanmaku;
