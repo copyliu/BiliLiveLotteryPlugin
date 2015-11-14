@@ -1,0 +1,44 @@
+﻿<Window x:Class="BiliLiveLotteryPlugin.MainWin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BiliLiveLotteryPlugin"
+             mc:Ignorable="d" Height="293.684" Width="494.842">
+
+    <TabControl x:Name="tabControl" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition">
+        <TabItem Header="默认模式">
+            <DockPanel Background="#FFE5E5E5">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" DockPanel.Dock="Top">
+                    <TextBlock TextWrapping="Wrap" Text="延迟秒数(0为立即)" d:LayoutOverrides="Width" Height="18" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBox x:Name="default_num_set"  TextWrapping="Wrap" Text="{Binding default_delay}"  Width="50" FontSize="16"/>
+                    <Button x:Name="default_start" Content="开始" Click="default_start_Click" FontSize="16" Width="50"/>
+                </StackPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="tb1" TextWrapping="Wrap" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
+                    <TextBlock x:Name="tb2" TextWrapping="Wrap" Grid.Row="1" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
+                    <TextBlock x:Name="tb3" TextWrapping="Wrap" Grid.Row="2" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
+                    <TextBlock x:Name="tb4" TextWrapping="Wrap" Grid.Row="3" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
+                    <TextBlock x:Name="tb5" TextWrapping="Wrap" Grid.Row="4" Text="中間那個是抽中的!" TextAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Cursor="Arrow"/>
+                </Grid>
+            </DockPanel>
+        </TabItem>
+        <TabItem Header="抢答模式">
+            <Grid Background="#FFE5E5E5">
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="還沒做" VerticalAlignment="Center" FontSize="24"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="使用说明">
+            <Grid Background="#FFE5E5E5">
+                <TextBlock x:Name="textBlock1" TextWrapping="Wrap" FontSize="14.667"><Run Text="1. 首先确定已经启用插件, 然后输入一个秒数. 比如填5."/><LineBreak/><Run Text="2. 主播开始喊抽奖开始, 倒数5秒, 然后点开始."/><LineBreak/><Run Text="3. 大声倒数5秒."/><LineBreak/><Run Text="4. 中间红底那位观众便是抽中的幸运儿("/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="PS. 抽奖完毕之后本插件自动被停用, 想再来一次请到弹幕姬插件中再次启用."/><LineBreak/><Run/></TextBlock>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>
